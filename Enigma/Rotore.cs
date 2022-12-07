@@ -22,17 +22,17 @@ namespace Enigma
             {
                 case 1:
                     {
-                        s = "JGDQOXUSCAMIFRVTPNEWKBLZYH";
+                        s = "AMIFRVTPNEWKBLZYHJGDQOXUSC";
                         break;
                     }
                 case 2:
                     {
-                        s = "NTZPSFBOKMWRCJDIVLAEYUXHGQ";
+                        s = "AEYUXHGQNTZPSFBOKMWRCJDIVL";
                         break;
                     }
                 case 3:
                     {
-                        s = "JVIUBHTCDYAKEQZPOSGXNRMWFL";
+                        s = "AKEQZPOSGXNRMWFLJVIUBHTCDY";
                         break;
                     }
                 default: throw new ArgumentException();
@@ -51,8 +51,7 @@ namespace Enigma
 
         public override (bool, char) Cripta(char l)
         {
-            int pos = l.GetHashCode() - 65;
-            char criptato = alfabeto[(pos + Giri) % 26];
+            char criptato = alfabeto[Giri];
 
 
 
@@ -63,28 +62,31 @@ namespace Enigma
         {
             if(aumenta)
             {
-                Lettera = (char)((Lettera.GetHashCode() + 1) % 26);
                 Giri += 1;
 
                 if (Giri == 26)
                 {
                     Giri = 0;
+                    Lettera = alfabeto[Giri];
                     return true;
                 }
 
+                Lettera = alfabeto[Giri];
                 return false;
             }
             else
             {
-                int ascii = (char)(Lettera.GetHashCode() - 1);
-                if (ascii == -1) ascii = 25;
-
-                Lettera = (char)(ascii);
                 Giri -= 1;
 
                 if (Giri == -1)
+                {
                     Giri = 25;
+                    Lettera = alfabeto[Giri];
+                    return true;
+                }
 
+
+                Lettera = alfabeto[Giri];
                 return false;
             }
 

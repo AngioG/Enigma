@@ -34,31 +34,38 @@ namespace Enigma
         {
             Button btn = sender as Button;
             Rotore rtr = new Rotore(1);
-            Label lbl = new Label();
 
             if (btn.Name.Contains("1"))
-            {
-                rtr = Rotore1;
-                lbl = lbl_r1;
-            }
+            rtr = Rotore1;
             if (btn.Name.Contains("2"))
-            {
                 rtr = Rotore2;
-                lbl = lbl_r2;
-            }
             if (btn.Name.Contains("3"))
-            {
                 rtr = Rotore3;
-                lbl = lbl_r3;
-            }
 
 
             if (btn.Name.Contains("u"))
-                rtr.Gira(true);
-            if (btn.Name.Contains("d"))
-                rtr.Gira(false);
+            {
+                if (rtr.Gira(true))
+                {
+                    if (btn.Name.Contains("1"))
+                        Rotore2.Gira(true);
+                    else if (btn.Name.Contains("2"))
+                        Rotore3.Gira(true);
+                }
+            }
 
-            lbl.Text = rtr.ToString();
+            if (btn.Name.Contains("d"))
+                if (rtr.Gira(false))
+                {
+                    if (btn.Name.Contains("1"))
+                        Rotore2.Gira(false);
+                    else if (btn.Name.Contains("2"))
+                        Rotore3.Gira(false);
+                }
+
+            lbl_r1.Text = Rotore1.ToString();
+            lbl_r2.Text = Rotore2.ToString();
+            lbl_r3.Text = Rotore3.ToString();
         }
     }
 }
