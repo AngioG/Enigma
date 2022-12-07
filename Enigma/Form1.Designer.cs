@@ -52,11 +52,22 @@
             this.lbl_riflettore = new System.Windows.Forms.Label();
             this.btn_rc1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_q = new System.Windows.Forms.Label();
+            this.lbl_w = new System.Windows.Forms.Label();
+            this.lbl_r = new System.Windows.Forms.Label();
+            this.lbl_e = new System.Windows.Forms.Label();
+            this.lbl_o = new System.Windows.Forms.Label();
+            this.lbl_i = new System.Windows.Forms.Label();
+            this.lbl_y = new System.Windows.Forms.Label();
+            this.lbl_t = new System.Windows.Forms.Label();
+            this.lbl_p = new System.Windows.Forms.Label();
             this.pan_rotori.SuspendLayout();
             this.pan_r1.SuspendLayout();
             this.pan_r2.SuspendLayout();
             this.pan_r3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_title
@@ -318,11 +329,119 @@
             this.panel2.Size = new System.Drawing.Size(800, 45);
             this.panel2.TabIndex = 3;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lbl_p);
+            this.panel3.Controls.Add(this.lbl_o);
+            this.panel3.Controls.Add(this.lbl_i);
+            this.panel3.Controls.Add(this.lbl_y);
+            this.panel3.Controls.Add(this.lbl_t);
+            this.panel3.Controls.Add(this.lbl_r);
+            this.panel3.Controls.Add(this.lbl_e);
+            this.panel3.Controls.Add(this.lbl_w);
+            this.panel3.Controls.Add(this.lbl_q);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 295);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(800, 160);
+            this.panel3.TabIndex = 4;
+            // 
+            // lbl_q
+            // 
+            this.lbl_q.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_q.Location = new System.Drawing.Point(130, 0);
+            this.lbl_q.Name = "lbl_q";
+            this.lbl_q.Size = new System.Drawing.Size(60, 60);
+            this.lbl_q.TabIndex = 7;
+            this.lbl_q.Text = "Q";
+            this.lbl_q.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_w
+            // 
+            this.lbl_w.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_w.Location = new System.Drawing.Point(190, 0);
+            this.lbl_w.Name = "lbl_w";
+            this.lbl_w.Size = new System.Drawing.Size(60, 60);
+            this.lbl_w.TabIndex = 8;
+            this.lbl_w.Text = "W";
+            this.lbl_w.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_r
+            // 
+            this.lbl_r.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_r.Location = new System.Drawing.Point(310, 0);
+            this.lbl_r.Name = "lbl_r";
+            this.lbl_r.Size = new System.Drawing.Size(60, 60);
+            this.lbl_r.TabIndex = 10;
+            this.lbl_r.Text = "R";
+            this.lbl_r.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_e
+            // 
+            this.lbl_e.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_e.Location = new System.Drawing.Point(250, 0);
+            this.lbl_e.Name = "lbl_e";
+            this.lbl_e.Size = new System.Drawing.Size(60, 60);
+            this.lbl_e.TabIndex = 9;
+            this.lbl_e.Text = "E";
+            this.lbl_e.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_o
+            // 
+            this.lbl_o.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_o.Location = new System.Drawing.Point(550, 0);
+            this.lbl_o.Name = "lbl_o";
+            this.lbl_o.Size = new System.Drawing.Size(60, 60);
+            this.lbl_o.TabIndex = 14;
+            this.lbl_o.Text = "O";
+            this.lbl_o.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_i
+            // 
+            this.lbl_i.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_i.Location = new System.Drawing.Point(490, 0);
+            this.lbl_i.Name = "lbl_i";
+            this.lbl_i.Size = new System.Drawing.Size(60, 60);
+            this.lbl_i.TabIndex = 13;
+            this.lbl_i.Text = "I";
+            this.lbl_i.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_y
+            // 
+            this.lbl_y.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_y.Location = new System.Drawing.Point(430, 0);
+            this.lbl_y.Name = "lbl_y";
+            this.lbl_y.Size = new System.Drawing.Size(60, 60);
+            this.lbl_y.TabIndex = 12;
+            this.lbl_y.Text = "Y";
+            this.lbl_y.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_t
+            // 
+            this.lbl_t.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_t.Location = new System.Drawing.Point(370, 0);
+            this.lbl_t.Name = "lbl_t";
+            this.lbl_t.Size = new System.Drawing.Size(60, 60);
+            this.lbl_t.TabIndex = 11;
+            this.lbl_t.Text = "T";
+            this.lbl_t.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_p
+            // 
+            this.lbl_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_p.Location = new System.Drawing.Point(610, 0);
+            this.lbl_p.Name = "lbl_p";
+            this.lbl_p.Size = new System.Drawing.Size(60, 60);
+            this.lbl_p.TabIndex = 15;
+            this.lbl_p.Text = "P";
+            this.lbl_p.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 639);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pan_rotori);
             this.Controls.Add(this.pan_space_1);
@@ -334,6 +453,7 @@
             this.pan_r2.ResumeLayout(false);
             this.pan_r3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -364,6 +484,16 @@
         private System.Windows.Forms.Label lbl_riflettore;
         private System.Windows.Forms.Button btn_rc1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbl_p;
+        private System.Windows.Forms.Label lbl_o;
+        private System.Windows.Forms.Label lbl_i;
+        private System.Windows.Forms.Label lbl_y;
+        private System.Windows.Forms.Label lbl_t;
+        private System.Windows.Forms.Label lbl_r;
+        private System.Windows.Forms.Label lbl_e;
+        private System.Windows.Forms.Label lbl_w;
+        private System.Windows.Forms.Label lbl_q;
     }
 }
 
