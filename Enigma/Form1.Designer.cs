@@ -53,6 +53,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pan_lettere = new System.Windows.Forms.Panel();
+            this.lbl_l = new System.Windows.Forms.Label();
+            this.lbl_u = new System.Windows.Forms.Label();
+            this.lbl_m = new System.Windows.Forms.Label();
+            this.lbl_n = new System.Windows.Forms.Label();
+            this.lbl_b = new System.Windows.Forms.Label();
+            this.lbl_v = new System.Windows.Forms.Label();
+            this.lbl_c = new System.Windows.Forms.Label();
+            this.lbl_x = new System.Windows.Forms.Label();
+            this.lbl_z = new System.Windows.Forms.Label();
+            this.lbl_k = new System.Windows.Forms.Label();
+            this.lbl_j = new System.Windows.Forms.Label();
+            this.lbl_h = new System.Windows.Forms.Label();
+            this.lbl_g = new System.Windows.Forms.Label();
+            this.lbl_f = new System.Windows.Forms.Label();
+            this.lbl_d = new System.Windows.Forms.Label();
+            this.lbl_s = new System.Windows.Forms.Label();
+            this.lbl_a = new System.Windows.Forms.Label();
             this.lbl_p = new System.Windows.Forms.Label();
             this.lbl_o = new System.Windows.Forms.Label();
             this.lbl_i = new System.Windows.Forms.Label();
@@ -62,28 +79,9 @@
             this.lbl_e = new System.Windows.Forms.Label();
             this.lbl_w = new System.Windows.Forms.Label();
             this.lbl_q = new System.Windows.Forms.Label();
-            this.lbl_k = new System.Windows.Forms.Label();
-            this.lbl_j = new System.Windows.Forms.Label();
-            this.lbl_h = new System.Windows.Forms.Label();
-            this.lbl_g = new System.Windows.Forms.Label();
-            this.lbl_f = new System.Windows.Forms.Label();
-            this.lbl_d = new System.Windows.Forms.Label();
-            this.lbl_s = new System.Windows.Forms.Label();
-            this.lbl_a = new System.Windows.Forms.Label();
-            this.lbl_m = new System.Windows.Forms.Label();
-            this.lbl_n = new System.Windows.Forms.Label();
-            this.lbl_b = new System.Windows.Forms.Label();
-            this.lbl_v = new System.Windows.Forms.Label();
-            this.lbl_c = new System.Windows.Forms.Label();
-            this.lbl_x = new System.Windows.Forms.Label();
-            this.lbl_z = new System.Windows.Forms.Label();
-            this.lbl_u = new System.Windows.Forms.Label();
-            this.lbl_l = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -91,23 +89,24 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.btn_w = new System.Windows.Forms.Button();
+            this.btn_r = new System.Windows.Forms.Button();
+            this.btn_e = new System.Windows.Forms.Button();
+            this.btn_i = new System.Windows.Forms.Button();
+            this.btn_u = new System.Windows.Forms.Button();
+            this.btn_y = new System.Windows.Forms.Button();
+            this.btn_t = new System.Windows.Forms.Button();
+            this.btn_p = new System.Windows.Forms.Button();
+            this.btn_o = new System.Windows.Forms.Button();
+            this.btn_l = new System.Windows.Forms.Button();
+            this.btn_k = new System.Windows.Forms.Button();
+            this.btn_j = new System.Windows.Forms.Button();
+            this.btn_h = new System.Windows.Forms.Button();
+            this.btn_g = new System.Windows.Forms.Button();
+            this.btn_f = new System.Windows.Forms.Button();
+            this.btn_d = new System.Windows.Forms.Button();
+            this.btn_s = new System.Windows.Forms.Button();
+            this.btn_a = new System.Windows.Forms.Button();
             this.pan_rotori.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pan_r1.SuspendLayout();
@@ -410,6 +409,176 @@
             this.pan_lettere.Size = new System.Drawing.Size(800, 180);
             this.pan_lettere.TabIndex = 4;
             // 
+            // lbl_l
+            // 
+            this.lbl_l.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_l.Location = new System.Drawing.Point(610, 60);
+            this.lbl_l.Name = "lbl_l";
+            this.lbl_l.Size = new System.Drawing.Size(60, 60);
+            this.lbl_l.TabIndex = 32;
+            this.lbl_l.Text = "L";
+            this.lbl_l.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_u
+            // 
+            this.lbl_u.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_u.Location = new System.Drawing.Point(460, 0);
+            this.lbl_u.Name = "lbl_u";
+            this.lbl_u.Size = new System.Drawing.Size(60, 60);
+            this.lbl_u.TabIndex = 31;
+            this.lbl_u.Text = "U";
+            this.lbl_u.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_m
+            // 
+            this.lbl_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_m.Location = new System.Drawing.Point(520, 120);
+            this.lbl_m.Name = "lbl_m";
+            this.lbl_m.Size = new System.Drawing.Size(60, 60);
+            this.lbl_m.TabIndex = 30;
+            this.lbl_m.Text = "M";
+            this.lbl_m.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_n
+            // 
+            this.lbl_n.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_n.Location = new System.Drawing.Point(460, 120);
+            this.lbl_n.Name = "lbl_n";
+            this.lbl_n.Size = new System.Drawing.Size(60, 60);
+            this.lbl_n.TabIndex = 29;
+            this.lbl_n.Text = "N";
+            this.lbl_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_b
+            // 
+            this.lbl_b.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_b.Location = new System.Drawing.Point(400, 120);
+            this.lbl_b.Name = "lbl_b";
+            this.lbl_b.Size = new System.Drawing.Size(60, 60);
+            this.lbl_b.TabIndex = 28;
+            this.lbl_b.Text = "B";
+            this.lbl_b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_v
+            // 
+            this.lbl_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_v.Location = new System.Drawing.Point(340, 120);
+            this.lbl_v.Name = "lbl_v";
+            this.lbl_v.Size = new System.Drawing.Size(60, 60);
+            this.lbl_v.TabIndex = 27;
+            this.lbl_v.Text = "V";
+            this.lbl_v.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_c
+            // 
+            this.lbl_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_c.Location = new System.Drawing.Point(280, 120);
+            this.lbl_c.Name = "lbl_c";
+            this.lbl_c.Size = new System.Drawing.Size(60, 60);
+            this.lbl_c.TabIndex = 26;
+            this.lbl_c.Text = "C";
+            this.lbl_c.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_x
+            // 
+            this.lbl_x.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_x.Location = new System.Drawing.Point(220, 120);
+            this.lbl_x.Name = "lbl_x";
+            this.lbl_x.Size = new System.Drawing.Size(60, 60);
+            this.lbl_x.TabIndex = 25;
+            this.lbl_x.Text = "X";
+            this.lbl_x.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_z
+            // 
+            this.lbl_z.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_z.Location = new System.Drawing.Point(160, 120);
+            this.lbl_z.Name = "lbl_z";
+            this.lbl_z.Size = new System.Drawing.Size(60, 60);
+            this.lbl_z.TabIndex = 24;
+            this.lbl_z.Text = "Z";
+            this.lbl_z.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_k
+            // 
+            this.lbl_k.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_k.Location = new System.Drawing.Point(550, 60);
+            this.lbl_k.Name = "lbl_k";
+            this.lbl_k.Size = new System.Drawing.Size(60, 60);
+            this.lbl_k.TabIndex = 23;
+            this.lbl_k.Text = "K";
+            this.lbl_k.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_j
+            // 
+            this.lbl_j.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_j.Location = new System.Drawing.Point(490, 60);
+            this.lbl_j.Name = "lbl_j";
+            this.lbl_j.Size = new System.Drawing.Size(60, 60);
+            this.lbl_j.TabIndex = 22;
+            this.lbl_j.Text = "J";
+            this.lbl_j.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_h
+            // 
+            this.lbl_h.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_h.Location = new System.Drawing.Point(430, 60);
+            this.lbl_h.Name = "lbl_h";
+            this.lbl_h.Size = new System.Drawing.Size(60, 60);
+            this.lbl_h.TabIndex = 21;
+            this.lbl_h.Text = "H";
+            this.lbl_h.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_g
+            // 
+            this.lbl_g.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_g.Location = new System.Drawing.Point(370, 60);
+            this.lbl_g.Name = "lbl_g";
+            this.lbl_g.Size = new System.Drawing.Size(60, 60);
+            this.lbl_g.TabIndex = 20;
+            this.lbl_g.Text = "G";
+            this.lbl_g.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_f
+            // 
+            this.lbl_f.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_f.Location = new System.Drawing.Point(310, 60);
+            this.lbl_f.Name = "lbl_f";
+            this.lbl_f.Size = new System.Drawing.Size(60, 60);
+            this.lbl_f.TabIndex = 19;
+            this.lbl_f.Text = "F";
+            this.lbl_f.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_d
+            // 
+            this.lbl_d.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_d.Location = new System.Drawing.Point(250, 60);
+            this.lbl_d.Name = "lbl_d";
+            this.lbl_d.Size = new System.Drawing.Size(60, 60);
+            this.lbl_d.TabIndex = 18;
+            this.lbl_d.Text = "D";
+            this.lbl_d.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_s
+            // 
+            this.lbl_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_s.Location = new System.Drawing.Point(190, 60);
+            this.lbl_s.Name = "lbl_s";
+            this.lbl_s.Size = new System.Drawing.Size(60, 60);
+            this.lbl_s.TabIndex = 17;
+            this.lbl_s.Text = "S";
+            this.lbl_s.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_a
+            // 
+            this.lbl_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lbl_a.Location = new System.Drawing.Point(130, 60);
+            this.lbl_a.Name = "lbl_a";
+            this.lbl_a.Size = new System.Drawing.Size(60, 60);
+            this.lbl_a.TabIndex = 16;
+            this.lbl_a.Text = "A";
+            this.lbl_a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lbl_p
             // 
             this.lbl_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
@@ -500,176 +669,6 @@
             this.lbl_q.Text = "Q";
             this.lbl_q.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_k
-            // 
-            this.lbl_k.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_k.Location = new System.Drawing.Point(550, 60);
-            this.lbl_k.Name = "lbl_k";
-            this.lbl_k.Size = new System.Drawing.Size(60, 60);
-            this.lbl_k.TabIndex = 23;
-            this.lbl_k.Text = "K";
-            this.lbl_k.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_j
-            // 
-            this.lbl_j.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_j.Location = new System.Drawing.Point(490, 60);
-            this.lbl_j.Name = "lbl_j";
-            this.lbl_j.Size = new System.Drawing.Size(60, 60);
-            this.lbl_j.TabIndex = 22;
-            this.lbl_j.Text = "J";
-            this.lbl_j.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_h
-            // 
-            this.lbl_h.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_h.Location = new System.Drawing.Point(430, 60);
-            this.lbl_h.Name = "lbl_h";
-            this.lbl_h.Size = new System.Drawing.Size(60, 60);
-            this.lbl_h.TabIndex = 21;
-            this.lbl_h.Text = "H";
-            this.lbl_h.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_g
-            // 
-            this.lbl_g.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_g.Location = new System.Drawing.Point(370, 60);
-            this.lbl_g.Name = "lbl_g";
-            this.lbl_g.Size = new System.Drawing.Size(60, 60);
-            this.lbl_g.TabIndex = 20;
-            this.lbl_g.Text = "G";
-            this.lbl_g.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_f
-            // 
-            this.lbl_f.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_f.Location = new System.Drawing.Point(310, 60);
-            this.lbl_f.Name = "lbl_f";
-            this.lbl_f.Size = new System.Drawing.Size(60, 60);
-            this.lbl_f.TabIndex = 19;
-            this.lbl_f.Text = "F";
-            this.lbl_f.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_d
-            // 
-            this.lbl_d.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_d.Location = new System.Drawing.Point(250, 60);
-            this.lbl_d.Name = "lbl_d";
-            this.lbl_d.Size = new System.Drawing.Size(60, 60);
-            this.lbl_d.TabIndex = 18;
-            this.lbl_d.Text = "D";
-            this.lbl_d.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_s
-            // 
-            this.lbl_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_s.Location = new System.Drawing.Point(190, 60);
-            this.lbl_s.Name = "lbl_s";
-            this.lbl_s.Size = new System.Drawing.Size(60, 60);
-            this.lbl_s.TabIndex = 17;
-            this.lbl_s.Text = "S";
-            this.lbl_s.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_a
-            // 
-            this.lbl_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_a.Location = new System.Drawing.Point(130, 60);
-            this.lbl_a.Name = "lbl_a";
-            this.lbl_a.Size = new System.Drawing.Size(60, 60);
-            this.lbl_a.TabIndex = 16;
-            this.lbl_a.Text = "A";
-            this.lbl_a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_m
-            // 
-            this.lbl_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_m.Location = new System.Drawing.Point(520, 120);
-            this.lbl_m.Name = "lbl_m";
-            this.lbl_m.Size = new System.Drawing.Size(60, 60);
-            this.lbl_m.TabIndex = 30;
-            this.lbl_m.Text = "M";
-            this.lbl_m.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_n
-            // 
-            this.lbl_n.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_n.Location = new System.Drawing.Point(460, 120);
-            this.lbl_n.Name = "lbl_n";
-            this.lbl_n.Size = new System.Drawing.Size(60, 60);
-            this.lbl_n.TabIndex = 29;
-            this.lbl_n.Text = "N";
-            this.lbl_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_b
-            // 
-            this.lbl_b.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_b.Location = new System.Drawing.Point(400, 120);
-            this.lbl_b.Name = "lbl_b";
-            this.lbl_b.Size = new System.Drawing.Size(60, 60);
-            this.lbl_b.TabIndex = 28;
-            this.lbl_b.Text = "B";
-            this.lbl_b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_v
-            // 
-            this.lbl_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_v.Location = new System.Drawing.Point(340, 120);
-            this.lbl_v.Name = "lbl_v";
-            this.lbl_v.Size = new System.Drawing.Size(60, 60);
-            this.lbl_v.TabIndex = 27;
-            this.lbl_v.Text = "V";
-            this.lbl_v.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_c
-            // 
-            this.lbl_c.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_c.Location = new System.Drawing.Point(280, 120);
-            this.lbl_c.Name = "lbl_c";
-            this.lbl_c.Size = new System.Drawing.Size(60, 60);
-            this.lbl_c.TabIndex = 26;
-            this.lbl_c.Text = "C";
-            this.lbl_c.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_x
-            // 
-            this.lbl_x.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_x.Location = new System.Drawing.Point(220, 120);
-            this.lbl_x.Name = "lbl_x";
-            this.lbl_x.Size = new System.Drawing.Size(60, 60);
-            this.lbl_x.TabIndex = 25;
-            this.lbl_x.Text = "X";
-            this.lbl_x.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_z
-            // 
-            this.lbl_z.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_z.Location = new System.Drawing.Point(160, 120);
-            this.lbl_z.Name = "lbl_z";
-            this.lbl_z.Size = new System.Drawing.Size(60, 60);
-            this.lbl_z.TabIndex = 24;
-            this.lbl_z.Text = "Z";
-            this.lbl_z.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_u
-            // 
-            this.lbl_u.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_u.Location = new System.Drawing.Point(460, 0);
-            this.lbl_u.Name = "lbl_u";
-            this.lbl_u.Size = new System.Drawing.Size(60, 60);
-            this.lbl_u.TabIndex = 31;
-            this.lbl_u.Text = "U";
-            this.lbl_u.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_l
-            // 
-            this.lbl_l.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.lbl_l.Location = new System.Drawing.Point(610, 60);
-            this.lbl_l.Name = "lbl_l";
-            this.lbl_l.Size = new System.Drawing.Size(60, 60);
-            this.lbl_l.TabIndex = 32;
-            this.lbl_l.Text = "L";
-            this.lbl_l.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -680,9 +679,25 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.btn_a);
+            this.panel5.Controls.Add(this.btn_l);
+            this.panel5.Controls.Add(this.btn_k);
+            this.panel5.Controls.Add(this.btn_j);
+            this.panel5.Controls.Add(this.btn_h);
+            this.panel5.Controls.Add(this.btn_g);
+            this.panel5.Controls.Add(this.btn_f);
+            this.panel5.Controls.Add(this.btn_d);
+            this.panel5.Controls.Add(this.btn_s);
+            this.panel5.Controls.Add(this.btn_p);
+            this.panel5.Controls.Add(this.btn_o);
+            this.panel5.Controls.Add(this.btn_i);
+            this.panel5.Controls.Add(this.btn_u);
+            this.panel5.Controls.Add(this.btn_y);
+            this.panel5.Controls.Add(this.btn_t);
+            this.panel5.Controls.Add(this.btn_r);
+            this.panel5.Controls.Add(this.btn_e);
+            this.panel5.Controls.Add(this.btn_w);
             this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label9);
@@ -690,23 +705,6 @@
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.label20);
-            this.panel5.Controls.Add(this.label21);
-            this.panel5.Controls.Add(this.label22);
-            this.panel5.Controls.Add(this.label23);
-            this.panel5.Controls.Add(this.label24);
-            this.panel5.Controls.Add(this.label25);
-            this.panel5.Controls.Add(this.label26);
-            this.panel5.Controls.Add(this.label27);
-            this.panel5.Controls.Add(this.label28);
-            this.panel5.Controls.Add(this.label29);
-            this.panel5.Controls.Add(this.label30);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 520);
             this.panel5.Name = "panel5";
@@ -715,33 +713,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.button1.Location = new System.Drawing.Point(29, 94);
+            this.button1.Location = new System.Drawing.Point(100, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 60);
             this.button1.TabIndex = 7;
             this.button1.Text = "Q";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label5.Location = new System.Drawing.Point(610, 60);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 60);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "L";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label6.Location = new System.Drawing.Point(460, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 60);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "U";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -813,175 +792,203 @@
             this.label13.Text = "Z";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label14
+            // btn_w
             // 
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label14.Location = new System.Drawing.Point(550, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 60);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "K";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_w.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_w.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_w.Location = new System.Drawing.Point(160, 0);
+            this.btn_w.Name = "btn_w";
+            this.btn_w.Size = new System.Drawing.Size(60, 60);
+            this.btn_w.TabIndex = 33;
+            this.btn_w.Text = "W";
+            this.btn_w.UseVisualStyleBackColor = false;
             // 
-            // label15
+            // btn_r
             // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label15.Location = new System.Drawing.Point(490, 60);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 60);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "J";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_r.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_r.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_r.Location = new System.Drawing.Point(280, 0);
+            this.btn_r.Name = "btn_r";
+            this.btn_r.Size = new System.Drawing.Size(60, 60);
+            this.btn_r.TabIndex = 35;
+            this.btn_r.Text = "R";
+            this.btn_r.UseVisualStyleBackColor = false;
             // 
-            // label16
+            // btn_e
             // 
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label16.Location = new System.Drawing.Point(430, 60);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(60, 60);
-            this.label16.TabIndex = 21;
-            this.label16.Text = "H";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_e.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_e.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_e.Location = new System.Drawing.Point(220, 0);
+            this.btn_e.Name = "btn_e";
+            this.btn_e.Size = new System.Drawing.Size(60, 60);
+            this.btn_e.TabIndex = 34;
+            this.btn_e.Text = "E";
+            this.btn_e.UseVisualStyleBackColor = false;
             // 
-            // label17
+            // btn_i
             // 
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label17.Location = new System.Drawing.Point(370, 60);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(60, 60);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "G";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_i.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_i.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_i.Location = new System.Drawing.Point(520, 0);
+            this.btn_i.Name = "btn_i";
+            this.btn_i.Size = new System.Drawing.Size(60, 60);
+            this.btn_i.TabIndex = 39;
+            this.btn_i.Text = "I";
+            this.btn_i.UseVisualStyleBackColor = false;
             // 
-            // label18
+            // btn_u
             // 
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label18.Location = new System.Drawing.Point(310, 60);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 60);
-            this.label18.TabIndex = 19;
-            this.label18.Text = "F";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_u.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_u.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_u.Location = new System.Drawing.Point(460, 0);
+            this.btn_u.Name = "btn_u";
+            this.btn_u.Size = new System.Drawing.Size(60, 60);
+            this.btn_u.TabIndex = 38;
+            this.btn_u.Text = "U";
+            this.btn_u.UseVisualStyleBackColor = false;
             // 
-            // label19
+            // btn_y
             // 
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label19.Location = new System.Drawing.Point(250, 60);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 60);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "D";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_y.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_y.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_y.Location = new System.Drawing.Point(400, 0);
+            this.btn_y.Name = "btn_y";
+            this.btn_y.Size = new System.Drawing.Size(60, 60);
+            this.btn_y.TabIndex = 37;
+            this.btn_y.Text = "Y";
+            this.btn_y.UseVisualStyleBackColor = false;
             // 
-            // label20
+            // btn_t
             // 
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label20.Location = new System.Drawing.Point(190, 60);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(60, 60);
-            this.label20.TabIndex = 17;
-            this.label20.Text = "S";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_t.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_t.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_t.Location = new System.Drawing.Point(340, 0);
+            this.btn_t.Name = "btn_t";
+            this.btn_t.Size = new System.Drawing.Size(60, 60);
+            this.btn_t.TabIndex = 36;
+            this.btn_t.Text = "T";
+            this.btn_t.UseVisualStyleBackColor = false;
             // 
-            // label21
+            // btn_p
             // 
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label21.Location = new System.Drawing.Point(130, 60);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(60, 60);
-            this.label21.TabIndex = 16;
-            this.label21.Text = "A";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_p.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_p.Location = new System.Drawing.Point(640, 0);
+            this.btn_p.Name = "btn_p";
+            this.btn_p.Size = new System.Drawing.Size(60, 60);
+            this.btn_p.TabIndex = 41;
+            this.btn_p.Text = "P";
+            this.btn_p.UseVisualStyleBackColor = false;
             // 
-            // label22
+            // btn_o
             // 
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label22.Location = new System.Drawing.Point(640, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(60, 60);
-            this.label22.TabIndex = 15;
-            this.label22.Text = "P";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_o.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_o.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_o.Location = new System.Drawing.Point(580, 0);
+            this.btn_o.Name = "btn_o";
+            this.btn_o.Size = new System.Drawing.Size(60, 60);
+            this.btn_o.TabIndex = 40;
+            this.btn_o.Text = "O";
+            this.btn_o.UseVisualStyleBackColor = false;
             // 
-            // label23
+            // btn_l
             // 
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label23.Location = new System.Drawing.Point(580, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(60, 60);
-            this.label23.TabIndex = 14;
-            this.label23.Text = "O";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_l.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_l.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_l.Location = new System.Drawing.Point(610, 60);
+            this.btn_l.Name = "btn_l";
+            this.btn_l.Size = new System.Drawing.Size(60, 60);
+            this.btn_l.TabIndex = 49;
+            this.btn_l.Text = "L";
+            this.btn_l.UseVisualStyleBackColor = false;
             // 
-            // label24
+            // btn_k
             // 
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label24.Location = new System.Drawing.Point(520, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(60, 60);
-            this.label24.TabIndex = 13;
-            this.label24.Text = "I";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_k.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_k.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_k.Location = new System.Drawing.Point(550, 60);
+            this.btn_k.Name = "btn_k";
+            this.btn_k.Size = new System.Drawing.Size(60, 60);
+            this.btn_k.TabIndex = 48;
+            this.btn_k.Text = "K";
+            this.btn_k.UseVisualStyleBackColor = false;
             // 
-            // label25
+            // btn_j
             // 
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label25.Location = new System.Drawing.Point(400, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(60, 60);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "Y";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_j.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_j.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_j.Location = new System.Drawing.Point(490, 60);
+            this.btn_j.Name = "btn_j";
+            this.btn_j.Size = new System.Drawing.Size(60, 60);
+            this.btn_j.TabIndex = 47;
+            this.btn_j.Text = "J";
+            this.btn_j.UseVisualStyleBackColor = false;
             // 
-            // label26
+            // btn_h
             // 
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label26.Location = new System.Drawing.Point(340, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 60);
-            this.label26.TabIndex = 11;
-            this.label26.Text = "T";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_h.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_h.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_h.Location = new System.Drawing.Point(430, 60);
+            this.btn_h.Name = "btn_h";
+            this.btn_h.Size = new System.Drawing.Size(60, 60);
+            this.btn_h.TabIndex = 46;
+            this.btn_h.Text = "H";
+            this.btn_h.UseVisualStyleBackColor = false;
             // 
-            // label27
+            // btn_g
             // 
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label27.Location = new System.Drawing.Point(280, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 60);
-            this.label27.TabIndex = 10;
-            this.label27.Text = "R";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_g.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_g.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_g.Location = new System.Drawing.Point(370, 60);
+            this.btn_g.Name = "btn_g";
+            this.btn_g.Size = new System.Drawing.Size(60, 60);
+            this.btn_g.TabIndex = 45;
+            this.btn_g.Text = "G";
+            this.btn_g.UseVisualStyleBackColor = false;
             // 
-            // label28
+            // btn_f
             // 
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label28.Location = new System.Drawing.Point(220, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 60);
-            this.label28.TabIndex = 9;
-            this.label28.Text = "E";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_f.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_f.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_f.Location = new System.Drawing.Point(310, 60);
+            this.btn_f.Name = "btn_f";
+            this.btn_f.Size = new System.Drawing.Size(60, 60);
+            this.btn_f.TabIndex = 44;
+            this.btn_f.Text = "F";
+            this.btn_f.UseVisualStyleBackColor = false;
             // 
-            // label29
+            // btn_d
             // 
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label29.Location = new System.Drawing.Point(160, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(60, 60);
-            this.label29.TabIndex = 8;
-            this.label29.Text = "W";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_d.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_d.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_d.Location = new System.Drawing.Point(250, 60);
+            this.btn_d.Name = "btn_d";
+            this.btn_d.Size = new System.Drawing.Size(60, 60);
+            this.btn_d.TabIndex = 43;
+            this.btn_d.Text = "D";
+            this.btn_d.UseVisualStyleBackColor = false;
             // 
-            // label30
+            // btn_s
             // 
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.label30.Location = new System.Drawing.Point(100, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(60, 60);
-            this.label30.TabIndex = 7;
-            this.label30.Text = "Q";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_s.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_s.Location = new System.Drawing.Point(190, 60);
+            this.btn_s.Name = "btn_s";
+            this.btn_s.Size = new System.Drawing.Size(60, 60);
+            this.btn_s.TabIndex = 42;
+            this.btn_s.Text = "S";
+            this.btn_s.UseVisualStyleBackColor = false;
+            // 
+            // btn_a
+            // 
+            this.btn_a.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.btn_a.Location = new System.Drawing.Point(130, 60);
+            this.btn_a.Name = "btn_a";
+            this.btn_a.Size = new System.Drawing.Size(60, 60);
+            this.btn_a.TabIndex = 50;
+            this.btn_a.Text = "A";
+            this.btn_a.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -1064,8 +1071,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -1073,23 +1078,24 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Button btn_w;
+        private System.Windows.Forms.Button btn_r;
+        private System.Windows.Forms.Button btn_e;
+        private System.Windows.Forms.Button btn_l;
+        private System.Windows.Forms.Button btn_k;
+        private System.Windows.Forms.Button btn_j;
+        private System.Windows.Forms.Button btn_h;
+        private System.Windows.Forms.Button btn_g;
+        private System.Windows.Forms.Button btn_f;
+        private System.Windows.Forms.Button btn_d;
+        private System.Windows.Forms.Button btn_s;
+        private System.Windows.Forms.Button btn_p;
+        private System.Windows.Forms.Button btn_o;
+        private System.Windows.Forms.Button btn_i;
+        private System.Windows.Forms.Button btn_u;
+        private System.Windows.Forms.Button btn_y;
+        private System.Windows.Forms.Button btn_t;
+        private System.Windows.Forms.Button btn_a;
     }
 }
 
