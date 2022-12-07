@@ -67,5 +67,19 @@ namespace Enigma
             lbl_r2.Text = Rotore2.ToString();
             lbl_r3.Text = Rotore3.ToString();
         }
+
+        private void ChangeReflector(object sender, EventArgs e)
+        {
+            if (lbl_riflettore.Text == "UKW")
+            {
+                lbl_riflettore.Text = "ETW";
+                Riflettore = new Riflettore(5);
+            }
+            else
+            {
+                lbl_riflettore.Text = "UKW";
+                Riflettore = new Riflettore(4);
+            }
+        }
     }
 }
