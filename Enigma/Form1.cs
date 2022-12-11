@@ -55,13 +55,10 @@ namespace Enigma
 
 
             if (btn.Name.Contains("u"))
-                if (rtr.Gira(true) && rtr == Rotore1)
-                    Rotore2.Gira(true);
+                rtr.Gira(true);
 
             if (btn.Name.Contains("d"))
-                rtr.Gira(false);/*
-                if (rtr.Gira(false) && rtr == Rotore1)
-                    Rotore2.Gira(false);*/
+                rtr.Gira(false);
 
             lbl_r1.Text = Rotore1.ToString();
             lbl_r2.Text = Rotore2.ToString();
