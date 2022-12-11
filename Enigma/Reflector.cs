@@ -20,12 +20,12 @@ namespace Enigma
             {
                 case 4:
                     {
-                        s = "QYHOGNECVPUZTFDJAXWMKISRBL";
+                        s = "YRUHQSLDPXNGOKMIEBFZCWVJAT";
                         break;
                     }
                 case 5:
                     {
-                        s = "QWERTZUIOASDFGHJKPYXCVBNML";
+                        s = "FVPJIAOYEDRZXWGCTKUQSBNMHL";
                         break;
                     }
                 default: throw new ArgumentException();

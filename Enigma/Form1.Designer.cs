@@ -1087,7 +1087,7 @@
             this.txt_input.Dock = System.Windows.Forms.DockStyle.Top;
             this.txt_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_input.Location = new System.Drawing.Point(850, 100);
-            this.txt_input.MaxLength = 1;
+            this.txt_input.MaxLength = 20000;
             this.txt_input.Name = "txt_input";
             this.txt_input.ReadOnly = true;
             this.txt_input.Size = new System.Drawing.Size(550, 160);

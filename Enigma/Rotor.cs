@@ -12,6 +12,8 @@ namespace Enigma
 
         public int Giri { get; set; }
 
+        public int RingPos { get; set; }
+
 
         public Rotor(int tipo) : base()
         {
@@ -22,17 +24,17 @@ namespace Enigma
             {
                 case 1:
                     {
-                        s = "JGDQOXUSCAMIFRVTPNEWKBLZYH";
+                        s = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
                         break;
                     }
                 case 2:
                     {
-                        s = "NTZPSFBOKMWRCJDIVLAEYUXHGQ";
+                        s = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
                         break;
                     }
                 case 3:
                     {
-                        s = "JVIUBHTCDYAKEQZPOSGXNRMWFL";
+                        s = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
                         break;
                     }
                 default: throw new ArgumentException();
@@ -44,6 +46,7 @@ namespace Enigma
             for (int l = 0; l < s.Length; l++)
                 alfabeto[l] = s[l];
 
+            RingPos = 0;
             Lettera = 'A';
             Giri = 0;
             Tipo = tipo;
@@ -51,14 +54,34 @@ namespace Enigma
 
         public override char Crypt(char l)
         {
-            int pos = l - 65;
-            char Crypted = alfabeto[(pos + Giri) % 26];
+            int aux = l - 65;
+            aux = (aux + Giri - RingPos + 26) % 26;
+            aux = alfabeto[aux] -65;
+
+            char Crypted = (char)((aux - Giri + RingPos + 26) % 26+65);
 
 
             return (Crypted);
         }
 
-        public void Gira(bool aumenta)
+        public char ReverseCrypt(char l)
+        {
+            int aux = (l - 65 + Giri - RingPos + 26) % 26;
+
+            for (int i = 0; i < 26; i++)
+                if (alfabeto[i] - 65 == aux)
+                {
+                    aux = i;
+                    break;
+                }
+
+
+            aux = (aux - Giri + RingPos + 26) % 26;
+
+            return (char)(aux + 65);
+        }
+
+        public bool Gira(bool aumenta)
         {
             if(aumenta)
             {
@@ -68,6 +91,11 @@ namespace Enigma
                     Giri = 0;
 
                 Lettera = (char)(65 + Giri);
+
+                if (Giri == 22)
+                    return true;
+
+                return false;
             }
             else
             {
@@ -78,6 +106,10 @@ namespace Enigma
 
 
                 Lettera = (char)(65 + Giri);
+
+                if (Giri == 22)
+                    return true;
+                return false;
             }
 
         }

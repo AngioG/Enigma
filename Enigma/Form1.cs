@@ -55,10 +55,13 @@ namespace Enigma
 
 
             if (btn.Name.Contains("u"))
-                rtr.Gira(true);
+                if (rtr.Gira(true) && rtr == Rotore1)
+                    Rotore2.Gira(true);
 
             if (btn.Name.Contains("d"))
-                rtr.Gira(false);
+                rtr.Gira(false);/*
+                if (rtr.Gira(false) && rtr == Rotore1)
+                    Rotore2.Gira(false);*/
 
             lbl_r1.Text = Rotore1.ToString();
             lbl_r2.Text = Rotore2.ToString();
@@ -84,15 +87,15 @@ namespace Enigma
             Button btn = sender as Button;
             char c = btn.Name[4];
 
-            if(selected == c)
+            if (selected == c)
             {
                 Colori.Where(col => col.Color == btn.BackColor).First().InUso = false;
-                btn.BackColor = SystemColors.ControlDarkDark;
                 selected = '0';
+                btn.BackColor = SystemColors.ControlDarkDark;
                 return;
             }
 
-            if(Links.Where(l => l.CompareTo(c) == 0).FirstOrDefault() != null)
+            if (Links.Where(l => l.CompareTo(c) == 0).FirstOrDefault() != null)
             {
                 KeyLink link = Links.Where(l => l.CompareTo(c) == 0).First();
 
@@ -107,6 +110,7 @@ namespace Enigma
                     }
 
                 btn.BackColor = SystemColors.ControlDarkDark;
+
 
                 Links.Remove(link);
             }
@@ -141,14 +145,13 @@ namespace Enigma
             if (e.KeyValue == 8 || e.KeyValue == 13)
             {
                 e.SuppressKeyPress = true;
-
             }
 
         }
 
         private void txt_input_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (txt_input.Text.Length >= txt_input.MaxLength) return;
+            txt_input.KeyPress -= txt_input_KeyPress;
 
             if (!char.IsLetter(e.KeyChar))
             {
@@ -160,15 +163,18 @@ namespace Enigma
                 e.KeyChar = e.KeyChar.ToString().ToUpper()[0];
 
             char ToCript = e.KeyChar;
-            Rotore1.Gira(true);
             var crypted = ToCript;
 
 
             var link = Links.Where(l => l.CompareTo(ToCript.ToString().ToLower()[0]) == 0).FirstOrDefault();
             if (link != null)
-                crypted = link.Letter1.ToString().ToUpper()[0] == ToCript ? link.Letter2.ToString().ToUpper()[0] : link.Letter1.ToString().ToUpper()[0];
+                crypted = link.Letter1.ToString().ToUpper()[0] == crypted ? link.Letter2.ToString().ToUpper()[0] : link.Letter1.ToString().ToUpper()[0];
 
-            crypted = Rotore1.Crypt(ToCript);
+            if (Rotore1.Gira(true))
+                Rotore2.Gira(true);
+            lbl_r1.Text = Rotore1.ToString();
+
+            crypted = Rotore1.Crypt(crypted);
 
             crypted = Rotore2.Crypt(crypted);
 
@@ -176,19 +182,18 @@ namespace Enigma
 
             crypted = Riflettore.Crypt(crypted);
 
-            crypted = Rotore3.Crypt(crypted);
+            crypted = Rotore3.ReverseCrypt(crypted);
 
-            crypted = Rotore2.Crypt(crypted);
+            crypted = Rotore2.ReverseCrypt(crypted);
 
-            crypted = Rotore1.Crypt(crypted);
+            crypted = Rotore1.ReverseCrypt(crypted);
 
 
 
             var link2 = Links.Where(l => l.CompareTo(crypted.ToString().ToLower()[0]) == 0).FirstOrDefault();
             if (link2 != null)
-                crypted = link.Letter1.ToString().ToUpper()[0] == crypted ? link.Letter2.ToString().ToUpper()[0] : link.Letter1.ToString().ToUpper()[0];
+                crypted = link2.Letter1.ToString().ToUpper()[0] == crypted ? link2.Letter2.ToString().ToUpper()[0] : link2.Letter1.ToString().ToUpper()[0];
 
-            lbl_r1.Text = Rotore1.ToString();
 
             txt_output.Text += crypted;
             txt_input.Text += ToCript;
@@ -207,7 +212,7 @@ namespace Enigma
             System.Threading.Thread.Sleep(1000);
 
             lbl.BackColor = SystemColors.Control;
-            txt_input.MaxLength += 1;
+            txt_input.KeyPress += txt_input_KeyPress;
         }
 
         private void txt_input_TextChanged(object sender, EventArgs e)
@@ -217,7 +222,6 @@ namespace Enigma
             {
                 txt_input.Text += " ";
                 txt_output.Text += " ";
-                txt_input.MaxLength += 1;
             }
 
             txt_input.Focus();
