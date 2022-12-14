@@ -9,6 +9,9 @@ namespace Enigma
 {
     static class Program
     {
+        public static Form1 Enigma { get; set; }
+
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,7 +20,8 @@ namespace Enigma
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Enigma = new Form1();
+            Application.Run(Enigma);
         }
     }
 }
