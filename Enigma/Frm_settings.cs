@@ -15,6 +15,8 @@ namespace Enigma
         public Frm_settings()
         {
             InitializeComponent();
+
+            lbl_delay.Text = Program.Enigma.Delay.ToString();
         }
 
         private void btn_res_rot_Click(object sender, EventArgs e)
@@ -117,7 +119,10 @@ namespace Enigma
 
         private void btn_res_log_Click(object sender, EventArgs e)
         {
-            list_logs.Items.Clear();
+            if (Program.Enigma.Frm_Logs == null)
+                return;
+
+            Program.Enigma.Frm_Logs.Invoke(new Action (() => { Program.Enigma.Frm_Logs.DeleteLogs(); }));
         }
     }
 }

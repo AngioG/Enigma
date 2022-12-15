@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_title = new System.Windows.Forms.Label();
             this.pan_space_1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -120,12 +121,15 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.txt_input = new System.Windows.Forms.RichTextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.btn_import = new System.Windows.Forms.Button();
             this.txt_output = new System.Windows.Forms.RichTextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_logs = new System.Windows.Forms.Button();
             this.btn_settings = new System.Windows.Forms.Button();
+            this.btn_export = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3.SuspendLayout();
             this.panel15.SuspendLayout();
             this.pan_links.SuspendLayout();
@@ -136,6 +140,7 @@
             this.pan_r1.SuspendLayout();
             this.pan_r2.SuspendLayout();
             this.pan_r3.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_title
@@ -144,7 +149,7 @@
             this.lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.Location = new System.Drawing.Point(0, 0);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(1450, 50);
+            this.lbl_title.Size = new System.Drawing.Size(1376, 50);
             this.lbl_title.TabIndex = 0;
             this.lbl_title.Text = "ENIGMA";
             this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -154,7 +159,7 @@
             this.pan_space_1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pan_space_1.Location = new System.Drawing.Point(0, 50);
             this.pan_space_1.Name = "pan_space_1";
-            this.pan_space_1.Size = new System.Drawing.Size(1450, 50);
+            this.pan_space_1.Size = new System.Drawing.Size(1376, 50);
             this.pan_space_1.TabIndex = 1;
             // 
             // panel3
@@ -978,7 +983,6 @@
             // 
             // panel5
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 620);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(800, 50);
@@ -1242,20 +1246,19 @@
             // panel8
             // 
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(1400, 100);
+            this.panel8.Location = new System.Drawing.Point(1326, 100);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(50, 670);
             this.panel8.TabIndex = 17;
             // 
             // txt_input
             // 
-            this.txt_input.Dock = System.Windows.Forms.DockStyle.Top;
             this.txt_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_input.Location = new System.Drawing.Point(850, 100);
             this.txt_input.MaxLength = 20000;
             this.txt_input.Name = "txt_input";
             this.txt_input.ReadOnly = true;
-            this.txt_input.Size = new System.Drawing.Size(550, 160);
+            this.txt_input.Size = new System.Drawing.Size(475, 160);
             this.txt_input.TabIndex = 0;
             this.txt_input.Text = "";
             this.txt_input.TextChanged += new System.EventHandler(this.txt_input_TextChanged);
@@ -1264,49 +1267,46 @@
             // 
             // panel9
             // 
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Controls.Add(this.btn_import);
             this.panel9.Location = new System.Drawing.Point(850, 260);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(550, 50);
+            this.panel9.Size = new System.Drawing.Size(499, 50);
             this.panel9.TabIndex = 19;
+            // 
+            // btn_import
+            // 
+            this.btn_import.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btn_import.Location = new System.Drawing.Point(0, 0);
+            this.btn_import.Name = "btn_import";
+            this.btn_import.Size = new System.Drawing.Size(475, 40);
+            this.btn_import.TabIndex = 27;
+            this.btn_import.Text = "Importa";
+            this.btn_import.UseVisualStyleBackColor = true;
+            this.btn_import.Click += new System.EventHandler(this.btn_import_Click);
             // 
             // txt_output
             // 
-            this.txt_output.Dock = System.Windows.Forms.DockStyle.Top;
             this.txt_output.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.txt_output.Location = new System.Drawing.Point(850, 310);
             this.txt_output.Name = "txt_output";
             this.txt_output.ReadOnly = true;
-            this.txt_output.Size = new System.Drawing.Size(550, 180);
+            this.txt_output.Size = new System.Drawing.Size(475, 180);
             this.txt_output.TabIndex = 20;
             this.txt_output.Text = "";
             // 
             // panel10
             // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(850, 490);
+            this.panel10.Location = new System.Drawing.Point(850, 527);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(550, 50);
             this.panel10.TabIndex = 21;
             // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label5.Location = new System.Drawing.Point(850, 685);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(550, 85);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Software representing Enigma machine from 1939 realised by ITIS Paleocapa class 5" +
-    "IC using windows forms and the programming language C#";
-            // 
             // btn_clear
             // 
-            this.btn_clear.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btn_clear.Location = new System.Drawing.Point(850, 540);
+            this.btn_clear.Location = new System.Drawing.Point(850, 574);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(550, 40);
+            this.btn_clear.Size = new System.Drawing.Size(475, 40);
             this.btn_clear.TabIndex = 23;
             this.btn_clear.Text = "Clear Text";
             this.btn_clear.UseVisualStyleBackColor = true;
@@ -1314,11 +1314,10 @@
             // 
             // btn_logs
             // 
-            this.btn_logs.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_logs.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btn_logs.Location = new System.Drawing.Point(850, 580);
+            this.btn_logs.Location = new System.Drawing.Point(850, 614);
             this.btn_logs.Name = "btn_logs";
-            this.btn_logs.Size = new System.Drawing.Size(550, 40);
+            this.btn_logs.Size = new System.Drawing.Size(475, 40);
             this.btn_logs.TabIndex = 24;
             this.btn_logs.Text = "Logs";
             this.btn_logs.UseVisualStyleBackColor = true;
@@ -1326,25 +1325,44 @@
             // 
             // btn_settings
             // 
-            this.btn_settings.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btn_settings.Location = new System.Drawing.Point(850, 620);
+            this.btn_settings.Location = new System.Drawing.Point(850, 654);
             this.btn_settings.Name = "btn_settings";
-            this.btn_settings.Size = new System.Drawing.Size(550, 40);
+            this.btn_settings.Size = new System.Drawing.Size(475, 40);
             this.btn_settings.TabIndex = 25;
             this.btn_settings.Text = "Settings";
             this.btn_settings.UseVisualStyleBackColor = true;
             this.btn_settings.Click += new System.EventHandler(this.open_settings);
             // 
+            // btn_export
+            // 
+            this.btn_export.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btn_export.Location = new System.Drawing.Point(850, 490);
+            this.btn_export.Name = "btn_export";
+            this.btn_export.Size = new System.Drawing.Size(475, 40);
+            this.btn_export.TabIndex = 26;
+            this.btn_export.Text = "Esporta";
+            this.btn_export.UseVisualStyleBackColor = true;
+            this.btn_export.Click += new System.EventHandler(this.btn_export_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(850, 720);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(476, 50);
+            this.panel6.TabIndex = 27;
+            // 
             // Frm_enigma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 770);
+            this.ClientSize = new System.Drawing.Size(1376, 770);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.btn_export);
             this.Controls.Add(this.btn_settings);
             this.Controls.Add(this.btn_logs);
             this.Controls.Add(this.btn_clear);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.txt_output);
             this.Controls.Add(this.panel9);
@@ -1366,6 +1384,7 @@
             this.pan_r1.ResumeLayout(false);
             this.pan_r2.ResumeLayout(false);
             this.pan_r3.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1432,7 +1451,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.RichTextBox txt_output;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_logs;
         private System.Windows.Forms.Panel panel15;
@@ -1470,6 +1488,10 @@
         private System.Windows.Forms.Label lbl_q;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button btn_settings;
+        private System.Windows.Forms.Button btn_import;
+        private System.Windows.Forms.Button btn_export;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

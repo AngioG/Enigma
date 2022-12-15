@@ -50,7 +50,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.btn_dd = new System.Windows.Forms.Button();
             this.lbl_delay = new System.Windows.Forms.Label();
@@ -65,11 +64,7 @@
             this.btn_res_rings = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.list_logs = new System.Windows.Forms.ListBox();
             this.pan_rotori.SuspendLayout();
             this.pan_r1.SuspendLayout();
             this.pan_r2.SuspendLayout();
@@ -78,7 +73,6 @@
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pan_rotori
@@ -263,7 +257,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1110, 50);
+            this.label2.Size = new System.Drawing.Size(579, 50);
             this.label2.TabIndex = 26;
             this.label2.Text = "ADVANCE SETINGS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,7 +283,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(50, 50);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1060, 50);
+            this.panel3.Size = new System.Drawing.Size(529, 50);
             this.panel3.TabIndex = 29;
             // 
             // panel4
@@ -305,7 +299,7 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.button6);
+            this.panel11.Controls.Add(this.label5);
             this.panel11.Controls.Add(this.panel15);
             this.panel11.Controls.Add(this.label7);
             this.panel11.Controls.Add(this.panel13);
@@ -321,16 +315,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(480, 454);
             this.panel11.TabIndex = 30;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button6.Location = new System.Drawing.Point(307, 286);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(78, 112);
-            this.button6.TabIndex = 47;
-            this.button6.Text = "Cript a file";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // panel15
             // 
@@ -470,59 +454,21 @@
             this.panel2.Size = new System.Drawing.Size(50, 454);
             this.panel2.TabIndex = 29;
             // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1060, 100);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(50, 614);
-            this.panel5.TabIndex = 31;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.panel14);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.list_logs);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(580, 100);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(480, 614);
-            this.panel6.TabIndex = 32;
-            // 
-            // panel14
-            // 
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel14.Location = new System.Drawing.Point(0, 564);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(480, 50);
-            this.panel14.TabIndex = 45;
-            // 
             // label5
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
-            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label5.Location = new System.Drawing.Point(239, 283);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(480, 50);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "LOGS";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // list_logs
-            // 
-            this.list_logs.FormattingEnabled = true;
-            this.list_logs.Location = new System.Drawing.Point(0, 68);
-            this.list_logs.Name = "list_logs";
-            this.list_logs.Size = new System.Drawing.Size(480, 511);
-            this.list_logs.TabIndex = 0;
+            this.label5.Size = new System.Drawing.Size(241, 121);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "Software representing Enigma machine from 1939 realised by ITIS Paleocapa class 5" +
+    "IC using windows forms and the programming language C#";
             // 
             // Frm_settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 714);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
+            this.ClientSize = new System.Drawing.Size(579, 714);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -538,7 +484,6 @@
             this.panel4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -567,7 +512,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button btn_dd;
         private System.Windows.Forms.Label lbl_delay;
@@ -582,10 +526,6 @@
         private System.Windows.Forms.Button btn_res_rings;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox list_logs;
     }
 }
