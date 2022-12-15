@@ -81,7 +81,7 @@ namespace Enigma
             return (char)(aux + 65);
         }
 
-        public bool Gira(bool aumenta)
+        public bool RotateRotor(bool aumenta)
         {
             if(aumenta)
             {
@@ -92,7 +92,7 @@ namespace Enigma
 
                 Lettera = (char)(65 + Giri);
 
-                if (Giri == 22)
+                if (Giri == 0)
                     return true;
 
                 return false;
@@ -113,6 +113,26 @@ namespace Enigma
             }
 
         }
+
+        public void RotateRing(bool aumenta)
+        {
+            if (aumenta)
+            {
+                RingPos += 1;
+
+                if (RingPos == 26)
+                    RingPos = 0;
+            }
+            else
+            {
+                RingPos -= 1;
+
+                if (RingPos == -1)
+                    RingPos = 25;
+            }
+
+        }
+
 
         public override string ToString()
         {

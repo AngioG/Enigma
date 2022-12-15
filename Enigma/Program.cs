@@ -9,7 +9,7 @@ namespace Enigma
 {
     static class Program
     {
-        public static Form1 Enigma { get; set; }
+        public static Frm_enigma Enigma { get; set; }
 
 
         /// <summary>
@@ -20,7 +20,7 @@ namespace Enigma
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Enigma = new Form1();
+            Enigma = new Frm_enigma();
             Application.Run(Enigma);
         }
     }
