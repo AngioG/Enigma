@@ -8,6 +8,7 @@ namespace Enigma
 {
     public class Rotor : Reflector
     {
+        public int Tipo { get; }
         public char Lettera { get; set; }
 
         public int Giri { get; set; }
@@ -24,17 +25,17 @@ namespace Enigma
             {
                 case 1:
                     {
-                        s = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+                        s = "JGDQOXUSCAMIFRVTPNEWKBLZYH";
                         break;
                     }
                 case 2:
                     {
-                        s = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
+                        s = "NTZPSFBOKMWRCJDIVLAEYUXHGQ";
                         break;
                     }
                 case 3:
                     {
-                        s = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
+                        s = "JVIUBHTCDYAKEQZPOSGXNRMWFL";
                         break;
                     }
                 default: throw new ArgumentException();

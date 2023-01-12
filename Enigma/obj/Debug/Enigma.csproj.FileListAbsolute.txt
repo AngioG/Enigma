@@ -34,3 +34,4 @@ C:\Users\angioletti.18174\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_sett
 C:\Users\angioletti\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_enigma.resources
 C:\Users\angioletti\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_logs.resources
 C:\Users\angioletti\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_settings.resources
+C:\Users\angioletti.18174\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_logs.resources

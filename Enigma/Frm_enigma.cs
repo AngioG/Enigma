@@ -22,7 +22,7 @@ namespace Enigma
         #region Fields
         private List<Colore> Colori = new List<Colore>()
         {
-            new Colore(Color.LightBlue),new Colore(Color.Pink),new Colore(Color.Red),new Colore(Color.Orange),new Colore(Color.Yellow),new Colore(Color.LightGreen),new Colore(Color.ForestGreen),new Colore(Color.White),new Colore(Color.Magenta),new Colore(Color.Teal),new Colore(Color.Purple),new Colore(Color.Beige),new Colore(Color.DarkKhaki),new Colore(Color.Brown),new Colore(Color.Gold), new Colore(Color.Black)
+            new Colore(Color.LightBlue),new Colore(Color.Pink),new Colore(Color.Red),new Colore(Color.Orange),new Colore(Color.Yellow),new Colore(Color.LightGreen),new Colore(Color.ForestGreen),new Colore(Color.White),new Colore(Color.Magenta),new Colore(Color.Teal),new Colore(Color.Purple),new Colore(Color.Lime),new Colore(Color.DarkKhaki)
         };
         private List<KeyLink> Links = new List<KeyLink>();
         private char selected = '0';
@@ -211,11 +211,14 @@ namespace Enigma
                     lbl = l;
                     break;
                 }
-            lbl.BackColor = Color.Yellow;
-
+            Accendi(lbl);
             Application.DoEvents();
-            System.Threading.Thread.Sleep(Delay);
 
+            timer1.Interval = Delay;
+            timer1.Start();
+
+
+            
 
             if (Frm_Logs != null)
                 Frm_Logs.Invoke(new Action(() =>
@@ -223,7 +226,7 @@ namespace Enigma
                     Frm_Logs.WriteSingleLog($"Character crypted: {crypted}");
                     Frm_Logs.WriteSingleLog("");
                 }));
-            lbl.BackColor = SystemColors.Control;
+
             txt_input.KeyPress += txt_input_KeyPress;
         }
 
@@ -288,6 +291,23 @@ namespace Enigma
                 Frm_Logs.Invoke(new Action(() => { Frm_Logs.WriteSingleLog($"Character after plugboard: {crypted}"); }));
 
             return crypted;
+        }
+
+       private void TimerTick(object sender, EventArgs e)
+        {
+            Accendi();
+        }
+
+        private void Accendi(Label l = null)
+        {
+            foreach (var lbl in pan_letters.Controls)
+                if(lbl.GetType() == typeof(Label))
+                    (lbl as Label).BackColor = SystemColors.Control;
+
+            if(l != null)
+                l.BackColor = Color.Yellow;
+
+            timer1.Stop();
         }
 
         private void txt_input_TextChanged(object sender, EventArgs e)
@@ -390,7 +410,8 @@ namespace Enigma
                 fileContent = reader.ReadToEnd();
             }
 
-            //var t = new Task
+            txt_input.Text = "";
+            txt_output.Text = "";
             await Task.Run(() => encrypt_text(fileContent));
 
 
@@ -454,7 +475,6 @@ namespace Enigma
 
         private void btn_export_Click(object sender, EventArgs e)
         {
-            Stream myStream;
             SaveFileDialog sfd = new SaveFileDialog();
 
             sfd.Filter = "txt files (*.txt)|*.txt";
@@ -463,12 +483,14 @@ namespace Enigma
 
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                if ((myStream = sfd.OpenFile()) != null)
+                using(StreamWriter sw = new StreamWriter(sfd.FileName))
                 {
-                    // Code to write the stream goes here.
-                    myStream.Close();
+
+                    sw.Write(txt_output.Text);
+                    sw.Close();
                 }
             }
         }
+
     }
 }

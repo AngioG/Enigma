@@ -1270,7 +1270,7 @@
             this.panel9.Controls.Add(this.btn_import);
             this.panel9.Location = new System.Drawing.Point(850, 260);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(499, 50);
+            this.panel9.Size = new System.Drawing.Size(476, 50);
             this.panel9.TabIndex = 19;
             // 
             // btn_import
@@ -1352,6 +1352,10 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(476, 50);
             this.panel6.TabIndex = 27;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.TimerTick);
             // 
             // Frm_enigma
             // 
