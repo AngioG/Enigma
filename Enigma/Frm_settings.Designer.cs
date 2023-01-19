@@ -50,12 +50,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.btn_dd = new System.Windows.Forms.Button();
-            this.lbl_delay = new System.Windows.Forms.Label();
-            this.btn_du = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btn_res_log = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -64,7 +58,6 @@
             this.btn_res_rings = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.pan_rotori.SuspendLayout();
             this.pan_r1.SuspendLayout();
             this.pan_r2.SuspendLayout();
@@ -72,7 +65,6 @@
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.SuspendLayout();
             // 
             // pan_rotori
@@ -268,7 +260,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(50, 664);
+            this.panel1.Size = new System.Drawing.Size(50, 491);
             this.panel1.TabIndex = 27;
             // 
             // panel7
@@ -294,15 +286,11 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(50, 100);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(530, 614);
+            this.panel4.Size = new System.Drawing.Size(530, 441);
             this.panel4.TabIndex = 30;
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.panel15);
-            this.panel11.Controls.Add(this.label7);
-            this.panel11.Controls.Add(this.panel13);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.btn_res_log);
             this.panel11.Controls.Add(this.panel9);
@@ -313,70 +301,8 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(0, 160);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(480, 454);
+            this.panel11.Size = new System.Drawing.Size(480, 281);
             this.panel11.TabIndex = 30;
-            // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.btn_dd);
-            this.panel15.Controls.Add(this.lbl_delay);
-            this.panel15.Controls.Add(this.btn_du);
-            this.panel15.Location = new System.Drawing.Point(130, 283);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(80, 120);
-            this.panel15.TabIndex = 46;
-            // 
-            // btn_dd
-            // 
-            this.btn_dd.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_dd.Location = new System.Drawing.Point(0, 90);
-            this.btn_dd.Name = "btn_dd";
-            this.btn_dd.Size = new System.Drawing.Size(78, 30);
-            this.btn_dd.TabIndex = 7;
-            this.btn_dd.Text = "\\/";
-            this.btn_dd.UseVisualStyleBackColor = true;
-            this.btn_dd.Click += new System.EventHandler(this.btn_dd_Click);
-            // 
-            // lbl_delay
-            // 
-            this.lbl_delay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lbl_delay.Location = new System.Drawing.Point(0, 30);
-            this.lbl_delay.Name = "lbl_delay";
-            this.lbl_delay.Size = new System.Drawing.Size(78, 60);
-            this.lbl_delay.TabIndex = 6;
-            this.lbl_delay.Text = "750";
-            this.lbl_delay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btn_du
-            // 
-            this.btn_du.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_du.Location = new System.Drawing.Point(0, 0);
-            this.btn_du.Name = "btn_du";
-            this.btn_du.Size = new System.Drawing.Size(78, 30);
-            this.btn_du.TabIndex = 1;
-            this.btn_du.Text = "/\\";
-            this.btn_du.UseVisualStyleBackColor = true;
-            this.btn_du.Click += new System.EventHandler(this.btn_du_Click);
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label7.Location = new System.Drawing.Point(3, 283);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 58);
-            this.label7.TabIndex = 45;
-            this.label7.Text = "Operation Delay:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // panel13
-            // 
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel13.Location = new System.Drawing.Point(0, 404);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(480, 50);
-            this.panel13.TabIndex = 44;
             // 
             // panel12
             // 
@@ -451,30 +377,20 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(480, 160);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(50, 454);
+            this.panel2.Size = new System.Drawing.Size(50, 281);
             this.panel2.TabIndex = 29;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label5.Location = new System.Drawing.Point(239, 283);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(241, 121);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "Software representing Enigma machine from 1939 realised by ITIS Paleocapa class 5" +
-    "IC using windows forms and the programming language C#";
             // 
             // Frm_settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 714);
+            this.ClientSize = new System.Drawing.Size(579, 541);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Name = "Frm_settings";
-            this.Text = "Form2";
+            this.Text = "IMPOSTAZIONI";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.pan_rotori.ResumeLayout(false);
             this.pan_r1.ResumeLayout(false);
@@ -483,7 +399,6 @@
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -512,12 +427,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Button btn_dd;
-        private System.Windows.Forms.Label lbl_delay;
-        private System.Windows.Forms.Button btn_du;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button btn_res_log;
         private System.Windows.Forms.Panel panel9;
@@ -526,6 +435,5 @@
         private System.Windows.Forms.Button btn_res_rings;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label5;
     }
 }

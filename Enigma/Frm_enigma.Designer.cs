@@ -1377,7 +1377,7 @@
             this.Controls.Add(this.pan_space_1);
             this.Controls.Add(this.lbl_title);
             this.Name = "Frm_enigma";
-            this.Text = "Form1";
+            this.Text = "ENIGMA";
             this.panel3.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.pan_links.ResumeLayout(false);
