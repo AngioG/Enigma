@@ -55,31 +55,31 @@ namespace Enigma
 
         public override char Crypt(char l)
         {
-            int pos = l - 65;
-            pos = (pos + Giri - RingPos + 26) % 26;
-            pos = alfabeto[pos];
+            int aux = l - 65;
+            aux = (aux + Giri - RingPos + 26) % 26;
+            aux = alfabeto[aux] -65;
 
-            //char Crypted = (char)((pos - Giri + RingPos + 26) % 26 + 65);
+            char Crypted = (char)((aux - Giri + RingPos + 26) % 26+65);
 
 
-            return ((char)pos);
+            return (Crypted);
         }
 
         public char ReverseCrypt(char l)
         {
-            int pos = (l - 65 - Giri + RingPos + 26) % 26;
+            int aux = (l - 65 + Giri - RingPos + 26) % 26;
 
             for (int i = 0; i < 26; i++)
-                if (alfabeto[i] - 65 == pos)
+                if (alfabeto[i] - 65 == aux)
                 {
-                    pos = i;
+                    aux = i;
                     break;
                 }
 
 
-            //pos = (pos - Giri + RingPos + 26) % 26;
+            aux = (aux - Giri + RingPos + 26) % 26;
 
-            return (char)(pos + 65);
+            return (char)(aux + 65);
         }
 
         public bool RotateRotor(bool aumenta)

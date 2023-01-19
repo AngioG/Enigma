@@ -15,6 +15,8 @@ namespace Enigma
         public Frm_settings()
         {
             InitializeComponent();
+
+            lbl_delay.Text = Program.Enigma.Delay.ToString();
         }
 
         private void btn_res_rot_Click(object sender, EventArgs e)
@@ -85,6 +87,34 @@ namespace Enigma
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Program.Enigma.ResetForm2();
+        }
+
+        private void btn_du_Click(object sender, EventArgs e)
+        {
+            int value = int.Parse(lbl_delay.Text);
+
+            value += 50;
+            Program.Enigma.Delay = value;
+
+            if (value == 2500)
+                btn_du.Enabled = false;
+            btn_dd.Enabled = true;
+
+                lbl_delay.Text = value.ToString();
+        }
+
+        private void btn_dd_Click(object sender, EventArgs e)
+        {
+            int value = int.Parse(lbl_delay.Text);
+
+            value -= 50;
+            Program.Enigma.Delay = value;
+
+            if (value == 0)
+                btn_dd.Enabled = false;
+            btn_du.Enabled = true;
+
+            lbl_delay.Text = value.ToString();
         }
 
         private void btn_res_log_Click(object sender, EventArgs e)

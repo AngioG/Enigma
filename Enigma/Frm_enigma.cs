@@ -205,14 +205,12 @@ namespace Enigma
 
 
             Label lbl = null;
-            foreach (Control l in pan_letters.Controls)
-                if(l.GetType() == typeof(Label))
-                    if (l.Name.ToUpper()[4] == crypted)
-                    {
-                        lbl = l as Label;
-                        break;
-                    }
-
+            foreach (Label l in pan_letters.Controls)
+                if (l.Name.ToUpper()[4] == crypted)
+                {
+                    lbl = l;
+                    break;
+                }
             Accendi(lbl);
             Application.DoEvents();
 
@@ -238,6 +236,14 @@ namespace Enigma
 
             if (Frm_Logs != null)
                 Frm_Logs.Invoke(new Action(() => { Frm_Logs.WriteSingleLog($"Character to crypt: {crypted}"); }));
+
+            if (Rotore1.RotateRotor(true))
+                if (Rotore2.RotateRotor(true))
+                    Rotore3.RotateRotor(true);
+            lbl_r1.Invoke(new Action(() => { SetRotorsValue(); }));
+
+            if (Frm_Logs != null)
+                Frm_Logs.Invoke(new Action(() => { Frm_Logs.WriteSingleLog($"Rotors rotated upwards"); }));
 
             var link = Links.Where(l => l.CompareTo(ToCrypt.ToString().ToLower()[0]) == 0).FirstOrDefault();
             if (link != null)
@@ -277,18 +283,12 @@ namespace Enigma
                 Frm_Logs.Invoke(new Action(() => { Frm_Logs.WriteSingleLog($"Character after first rotor: {crypted}"); }));
 
 
+
             var link2 = Links.Where(l => l.CompareTo(crypted.ToString().ToLower()[0]) == 0).FirstOrDefault();
             if (link2 != null)
                 crypted = link2.Letter1.ToString().ToUpper()[0] == crypted ? link2.Letter2.ToString().ToUpper()[0] : link2.Letter1.ToString().ToUpper()[0];
             if (Frm_Logs != null)
                 Frm_Logs.Invoke(new Action(() => { Frm_Logs.WriteSingleLog($"Character after plugboard: {crypted}"); }));
-
-            if (Rotore1.RotateRotor(true))
-                if (Rotore2.RotateRotor(true))
-                    Rotore3.RotateRotor(true);
-            lbl_r1.Invoke(new Action(() => { SetRotorsValue(); }));
-            if (Frm_Logs != null)
-                Frm_Logs.Invoke(new Action(() => { Frm_Logs.WriteSingleLog($"Rotors rotated upwards"); }));
 
             return crypted;
         }
