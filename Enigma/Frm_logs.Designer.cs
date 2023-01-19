@@ -112,7 +112,7 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_logs";
-            this.Text = "LOGS";
+            this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_logs_FormClosed);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
