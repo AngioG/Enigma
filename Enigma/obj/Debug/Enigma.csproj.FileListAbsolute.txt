@@ -35,3 +35,16 @@ C:\Users\angioletti\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_enigma.res
 C:\Users\angioletti\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_logs.resources
 C:\Users\angioletti\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_settings.resources
 C:\Users\angioletti.18174\Downloads\Enigma-main\Enigma\obj\Debug\Enigma.Frm_logs.resources
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\bin\Debug\Enigma.exe.config
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\bin\Debug\Enigma.exe
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\bin\Debug\Enigma.pdb
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.csproj.AssemblyReference.cache
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.csproj.SuggestedBindingRedirects.cache
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.Frm_enigma.resources
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.Frm_logs.resources
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.Frm_settings.resources
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.Properties.Resources.resources
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.csproj.GenerateResource.cache
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.csproj.CoreCompileInputs.cache
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.exe
+C:\Users\angioletti\Downloads\Enigma-Non-va\Enigma\obj\Debug\Enigma.pdb

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -55,31 +56,24 @@ namespace Enigma
 
         public override char Crypt(char l)
         {
-            int aux = l - 65;
-            aux = (aux + Giri - RingPos + 26) % 26;
-            aux = alfabeto[aux] -65;
+            int partial = (l - 65 + Giri - RingPos + 26) % 26;
 
-            char Crypted = (char)((aux - Giri + RingPos + 26) % 26+65);
+            partial = alfabeto[partial] - 65;
 
+            partial = (partial - Giri + RingPos + 26) % 26;
 
-            return (Crypted);
+            return (char)(partial+65);
         }
 
         public char ReverseCrypt(char l)
         {
-            int aux = (l - 65 + Giri - RingPos + 26) % 26;
+            int partial = (l - 65 + Giri - RingPos + 26) % 26 + 65;
 
-            for (int i = 0; i < 26; i++)
-                if (alfabeto[i] - 65 == aux)
-                {
-                    aux = i;
-                    break;
-                }
+            partial =  Array.IndexOf(alfabeto, (char)partial);
 
+            partial = (partial - Giri + RingPos + 26) % 26;
 
-            aux = (aux - Giri + RingPos + 26) % 26;
-
-            return (char)(aux + 65);
+            return (char)(partial + 65);
         }
 
         public bool RotateRotor(bool aumenta)
