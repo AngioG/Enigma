@@ -58,6 +58,9 @@
             this.btn_res_rings = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmb_r3 = new System.Windows.Forms.ComboBox();
+            this.cmb_r2 = new System.Windows.Forms.ComboBox();
+            this.cmb_r1 = new System.Windows.Forms.ComboBox();
             this.pan_rotori.SuspendLayout();
             this.pan_r1.SuspendLayout();
             this.pan_r2.SuspendLayout();
@@ -69,6 +72,9 @@
             // 
             // pan_rotori
             // 
+            this.pan_rotori.Controls.Add(this.cmb_r1);
+            this.pan_rotori.Controls.Add(this.cmb_r2);
+            this.pan_rotori.Controls.Add(this.cmb_r3);
             this.pan_rotori.Controls.Add(this.pan_r1);
             this.pan_rotori.Controls.Add(this.pan_r2);
             this.pan_rotori.Controls.Add(this.pan_r3);
@@ -78,7 +84,7 @@
             this.pan_rotori.Dock = System.Windows.Forms.DockStyle.Top;
             this.pan_rotori.Location = new System.Drawing.Point(0, 0);
             this.pan_rotori.Name = "pan_rotori";
-            this.pan_rotori.Size = new System.Drawing.Size(530, 160);
+            this.pan_rotori.Size = new System.Drawing.Size(530, 207);
             this.pan_rotori.TabIndex = 8;
             // 
             // pan_r1
@@ -260,7 +266,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(50, 491);
+            this.panel1.Size = new System.Drawing.Size(50, 537);
             this.panel1.TabIndex = 27;
             // 
             // panel7
@@ -286,7 +292,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(50, 100);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(530, 441);
+            this.panel4.Size = new System.Drawing.Size(530, 487);
             this.panel4.TabIndex = 30;
             // 
             // panel11
@@ -299,9 +305,9 @@
             this.panel11.Controls.Add(this.btn_res_rings);
             this.panel11.Controls.Add(this.panel8);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(0, 160);
+            this.panel11.Location = new System.Drawing.Point(0, 207);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(480, 281);
+            this.panel11.Size = new System.Drawing.Size(480, 280);
             this.panel11.TabIndex = 30;
             // 
             // panel12
@@ -375,16 +381,59 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(480, 160);
+            this.panel2.Location = new System.Drawing.Point(480, 207);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(50, 281);
+            this.panel2.Size = new System.Drawing.Size(50, 280);
             this.panel2.TabIndex = 29;
+            // 
+            // cmb_r3
+            // 
+            this.cmb_r3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_r3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_r3.FormattingEnabled = true;
+            this.cmb_r3.Items.AddRange(new object[] {
+            "I",
+            "II",
+            "III"});
+            this.cmb_r3.Location = new System.Drawing.Point(18, 175);
+            this.cmb_r3.Name = "cmb_r3";
+            this.cmb_r3.Size = new System.Drawing.Size(80, 28);
+            this.cmb_r3.TabIndex = 10;
+            // 
+            // cmb_r2
+            // 
+            this.cmb_r2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_r2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_r2.FormattingEnabled = true;
+            this.cmb_r2.Items.AddRange(new object[] {
+            "I",
+            "II",
+            "III"});
+            this.cmb_r2.Location = new System.Drawing.Point(200, 175);
+            this.cmb_r2.Name = "cmb_r2";
+            this.cmb_r2.Size = new System.Drawing.Size(80, 28);
+            this.cmb_r2.TabIndex = 11;
+
+            // 
+            // cmb_r1
+            // 
+            this.cmb_r1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_r1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_r1.FormattingEnabled = true;
+            this.cmb_r1.Items.AddRange(new object[] {
+            "I",
+            "II",
+            "III"});
+            this.cmb_r1.Location = new System.Drawing.Point(382, 175);
+            this.cmb_r1.Name = "cmb_r1";
+            this.cmb_r1.Size = new System.Drawing.Size(80, 28);
+            this.cmb_r1.TabIndex = 12;
             // 
             // Frm_settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 541);
+            this.ClientSize = new System.Drawing.Size(579, 587);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -392,6 +441,7 @@
             this.Name = "Frm_settings";
             this.Text = "IMPOSTAZIONI";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.Load += new System.EventHandler(this.Frm_settings_Load);
             this.pan_rotori.ResumeLayout(false);
             this.pan_r1.ResumeLayout(false);
             this.pan_r2.ResumeLayout(false);
@@ -435,5 +485,8 @@
         private System.Windows.Forms.Button btn_res_rings;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox cmb_r1;
+        private System.Windows.Forms.ComboBox cmb_r2;
+        private System.Windows.Forms.ComboBox cmb_r3;
     }
 }

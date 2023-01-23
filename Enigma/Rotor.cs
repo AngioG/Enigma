@@ -12,12 +12,21 @@ namespace Enigma
         public int Tipo { get; }
         public char Lettera { get; set; }
 
-        public int Giri { get; set; }
+        private int giri;
+
+        public int Giri
+        {
+            get => giri;
+            set {
+                Lettera = (char)(65 + value);
+                giri = value;
+            }
+        }
 
         public int RingPos { get; set; }
 
 
-        public Rotor(int tipo) : base()
+        public Rotor(int tipo, int giri = 0) : base()
         {
 
             string s = "";
@@ -49,8 +58,7 @@ namespace Enigma
                 alfabeto[l] = s[l];
 
             RingPos = 0;
-            Lettera = 'A';
-            Giri = 0;
+            Giri = giri;
             Tipo = tipo;
         }
 
@@ -62,14 +70,14 @@ namespace Enigma
 
             partial = (partial - Giri + RingPos + 26) % 26;
 
-            return (char)(partial+65);
+            return (char)(partial + 65);
         }
 
         public char ReverseCrypt(char l)
         {
             int partial = (l - 65 + Giri - RingPos + 26) % 26 + 65;
 
-            partial =  Array.IndexOf(alfabeto, (char)partial);
+            partial = Array.IndexOf(alfabeto, (char)partial);
 
             partial = (partial - Giri + RingPos + 26) % 26;
 
@@ -78,17 +86,15 @@ namespace Enigma
 
         public bool RotateRotor(bool aumenta)
         {
-            if(aumenta)
+            if (aumenta)
             {
                 Giri += 1;
 
                 if (Giri == 26)
+                {
                     Giri = 0;
-
-                Lettera = (char)(65 + Giri);
-
-                if (Giri == 0)
                     return true;
+                }
 
                 return false;
             }
@@ -97,13 +103,12 @@ namespace Enigma
                 Giri -= 1;
 
                 if (Giri == -1)
+                {
                     Giri = 25;
-
-
-                Lettera = (char)(65 + Giri);
-
-                if (Giri == 22)
                     return true;
+
+                }
+
                 return false;
             }
 

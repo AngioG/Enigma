@@ -94,5 +94,49 @@ namespace Enigma
 
             Program.Enigma.Frm_Logs.Invoke(new Action (() => { Program.Enigma.Frm_Logs.DeleteLogs(); }));
         }
+
+        private void Frm_settings_Load(object sender, EventArgs e)
+        {
+            cmb_r1.SelectedIndex = Program.Enigma.Rotore1.Tipo - 1;
+            cmb_r2.SelectedIndex = Program.Enigma.Rotore2.Tipo - 1;
+            cmb_r3.SelectedIndex = Program.Enigma.Rotore3.Tipo - 1;
+
+            cmb_r1.SelectedIndexChanged += new EventHandler(change_rotor);
+            cmb_r2.SelectedIndexChanged += new EventHandler(change_rotor);
+            cmb_r3.SelectedIndexChanged += new EventHandler(change_rotor);
+        }
+
+        private void change_rotor(object sender, EventArgs e)
+        {
+            if (sender.GetType() != typeof(ComboBox))
+                return;
+
+            var cmb = sender as ComboBox;
+
+            switch(cmb.Name.Substring(cmb.Name.Length-1))
+            {
+                case "1":
+                    {
+                        Program.Enigma.Rotore1 = new Rotor(cmb.SelectedIndex + 1);
+                        break;
+                    }
+                case "2":
+                    {
+                        Program.Enigma.Rotore2 = new Rotor(cmb.SelectedIndex + 1);
+                        break;
+                    }
+                case "3":
+                    {
+                        Program.Enigma.Rotore3 = new Rotor(cmb.SelectedIndex + 1);
+                        break;
+                    }
+                default:
+                    {
+                        return;
+                    }
+            }
+
+            Program.Enigma.SetRotorsValue();
+        }
     }
 }
